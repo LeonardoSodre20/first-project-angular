@@ -1,0 +1,17 @@
+<main class="container-main">
+  <h1>{{ name }}</h1>
+
+
+  <button (click)="insertNewTask('Task 1')">
+    Submit
+  </button>
+
+  <ul>
+    @for (task of taskList; track task) {
+    <li>
+      {{ task }}
+    </li>
+    }
+  </ul>
+  <app-footer></app-footer>
+</main>
